@@ -1,0 +1,13 @@
+﻿路径:
+http://127.0.0.1:8080/jeesite/a?login
+账号/密码:
+admin/admin
+
+ Application.java 启动main方法
+ 
+ecplise 内存不足可修改 ecplise.ini的配置
+
+-vmargs
+-Xmx2048m
+-XX:ReservedCodeCacheSize=128m
+-Dosgi.nls.warnings=ignore
