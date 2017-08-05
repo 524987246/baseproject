@@ -46,7 +46,7 @@ public class TestDataController extends BaseController {
     @RequiresPermissions("test:testData:view")
     @RequestMapping(value = {"list", ""})
     public String list(TestData testData, HttpServletRequest request, HttpServletResponse response, Model model) {
-        Page<TestData> page = testDataService.findPage(new Page<>(request, response), testData);
+        Page<TestData> page = testDataService.findPage(new Page<TestData>(request, response), testData);
         model.addAttribute("page", page);
         return "jeesite/test/testDataList";
     }

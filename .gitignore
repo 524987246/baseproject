@@ -12,3 +12,4 @@
 hs_err_pid*
 /登录密码及路径.txt
 /.gitignore
+/target
